@@ -18,6 +18,8 @@ let productsHtml = products.map (function (item) {
         `
 }).join('')
 
-console.log (products[0])
-
 document.querySelector('#grid').innerHTML = productsHtml
+
+let navHtml = `<h1 id="etsy">Etsy</h1><div id="search-bar"></div>`
+
+document.querySelector('#nav').innerHTML = navHtml
