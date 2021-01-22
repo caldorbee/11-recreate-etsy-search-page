@@ -20,6 +20,10 @@ let productsHtml = products.map (function (item) {
 
 document.querySelector('#grid').innerHTML = productsHtml
 
-let navHtml = `<h1 id="etsy">Etsy</h1><div id="search-bar"></div>`
+let navHtml = `<h1 id="etsy">Etsy</h1>
+             <div id="search-bar">
+                id="search-bar">
+                <input type="image" src="/_i/mag.png" alt="Search">
+            </div>`
 
 document.querySelector('#nav').innerHTML = navHtml
