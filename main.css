@@ -39,10 +39,22 @@
   
 }
 
+.container {
+    margin-top: 8px;
+}
+
 #item-price {
     margin: 4px;
     font-size: 18px;
     font-weight: 100;
+}
+
+.shipping {
+    padding: 3px;
+    background-color: #D8E8D8;
+    border-radius: 30px;
+    position: relative;
+    vertical-align: middle;
 }
 
 #rating {
@@ -50,23 +62,78 @@
 }
 
 #nav {
-    margin: 0 4%;
+    margin: 0 3.8%;
 }
 
 #nav-bar {
-    padding: 12px 36px;
     display: flex;
-    justify-content: center;
+    
 }
 
-#search-bar {
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+#search-box {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
-    margin: 0 auto;
+    height: 100%;
+    width: 1070px;
+    margin-left: 15px;
     background: rgb(238, 238, 238);
-    border: 1px solid gray;
+    border: 1px solid rgb(189, 185, 185);
     border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-box:hover {
+    background: rgb(238, 238, 238);
+    border: 2px solid rgba(0, 0, 0, 0.527);
+    transition: .2s;
+}
+
+.drop-down-item {
+    list-style: none;
+
+}
+
+.dropdown-item:hover > .dropdown-block {
+    background-color:rgb(247, 245, 245);
+    height: 325px;
+    width: 1120%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-sub {
+    padding-top: 8px;
+    text-indent: 10px;
+    border-right: 1.5px solid  rgba(87, 87, 87, 1);
+    display: absolute;
+    width: 35%;
+    left: 5px;
+}
+
+.sub-sub:hover {
+    background-color: rgba(red, green, blue, alpha);
+}
+
+.drop-list-ul{
+    width: 33%;
+}
+
+.drop-down-over {
+    display: none;
+}
+
+.drop-list:hover > .drop-down-over {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
 }
 
 #cancel {
@@ -74,7 +141,6 @@
     border: none;
     font-size: 18px;
 }
-
 
 #mag {
     margin: 15px;
@@ -89,9 +155,6 @@
     font-family: Guardian Egyptian
 }
 
-.container {
-    margin: 0 auto;
-}
 
 #button {
     width: 50px;
@@ -103,6 +166,8 @@
 
 #cart {
     width: 100px;
+    cursor: pointer;
+    outline: none;
 
 }
 
@@ -122,23 +187,63 @@ a {
 }
 
 #sign-in {
+    height: 30px;
+    width: 70px;
+    margin: 10px 8px;
     border: none;
     background-color: white;
+}
 
+#sign-in:hover {
+    background: rgb(238, 238, 238);
+    border: rgba(0, 0, 0, 0.527);
+    border-radius: 25px;
 }
 
 #cart {
+    width: 50px;
     border: none;
     background-color: white;
 }
 
+#cart:hover {
+    background: rgb(238, 238, 238);
+    border: rgba(0, 0, 0, 0.527);
+    border-radius: 50%;
+   
+}
+
 .categories {
+    position: relative;
     margin-right: 5%;
     border-bottom: 1px solid rgb(187, 183, 183);
     font-size: 13px;
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
     height: 30px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 93%;
+    border: 1px solid red;
+    float: left;
+    list-style: none;
+}
+
+menu li {
+    float: left;
+}
+
+menu li a {
+    display: block;
+    padding: 20px;
+}
+
+menu li a:hover {
+    background-color: gray;
+    transform: 0.5s;
 }
 
 .filters {
@@ -154,6 +259,7 @@ a {
     justify-content: center;
     font-size: 15px;
     font-family: arial;
+    border: none;
 }
 
 .any {
@@ -186,6 +292,11 @@ a {
     position: relative;
     vertical-align: middle;
 
+}
+
+.top-filter-menu {
+    border: 105%;
+    transition: .5s;
 }
 
 .new-badge {
@@ -225,13 +336,22 @@ a {
     display: flex;
 }
 
-
-#sort-fav {
+#ad-search {
+    padding: .1px;
+    height: 18px;
+    width: 18px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 24px;
+    position: relative;
+    vertical-align: middle;
+}
+.sort-fav {
     padding: 5px;
     height: 30px;
     width: 30px;
     background: none;
-    font: inherit;
     cursor: pointer;
     outline: none;
     border-radius: 24px;
